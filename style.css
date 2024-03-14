@@ -125,9 +125,10 @@ max-width: 100%;
 }
 /* HEADER */
 .header{
-    background:var(--dark);
+    background:transparent;
+    padding:2rem;
     position:relative;
-    position:fix;
+    position:fixed;
     width:100%;
 }
 .header__nav ul.nav{
@@ -146,6 +147,7 @@ max-width: 100%;
 }
 .header__nav ul.nav li:hover a{
     color:var(--primary);
+    transition:.5s ease;
 }
 .header__nav ul.nav li:last-child a{
     background:var(--primary);
@@ -234,6 +236,14 @@ font-size:3rem;
 .burgir__menu{
     display:block;
 }
+}
+
+/* BANNER */
+.banner{
+  background-image:url("/img/banner_home_v1.jpg");
+  background-size:cover;
+  height:100vh;
+  background-position:center center;
 }
 /* REPEATABLE PATTERN */
 :root{
